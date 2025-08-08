@@ -1,0 +1,124 @@
+
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+}
+
+.App-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.add-todo-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input,
+.todo-select {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  background: blue;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+}
+
+.add-btn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.todo-item span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-details p {
+  margin: 2px 0;
+  font-size: 13px;
+}
+
+.update-btn,
+.save-btn
+{
+  padding: 5px 10px;
+  font-size: 13px;
+  border: 1px solid #999;
+  background: blue;
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.update-btn:hover,
+.delete-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.delete-btn,
+.cancel-btn {
+  padding: 5px 10px;
+  font-size: 13px;
+  border: 1px solid #999;
+  background: red;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.todo-stats,
+.no-todos {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #444;
+}
+
+@media (max-width: 500px) {
+  .add-todo-form {
+    flex-direction: column;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+}
+
